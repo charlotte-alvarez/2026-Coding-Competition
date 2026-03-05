@@ -33,19 +33,4 @@
 ###########################################################
 
 def answer(sentence: str) -> str:
-    ordered_words = {}
-    if not sentence:
-        return ""
-    for word in sentence:
-        for letter in word:
-            try:
-                conv = int(letter)
-            except Exception:
-                pass
-            ordered_words[conv] = word
-            pass
-    fin = ""
-    fin += ordered_words[1]
-    for word in sentence.split()[1:]:
-        fin += f" {word} "
-    return fin
+    pass

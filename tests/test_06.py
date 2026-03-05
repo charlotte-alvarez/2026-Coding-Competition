@@ -3,6 +3,10 @@ from problems.problem_06.problem import answer
 
 tests = [
     ["a1 2b 4d 3e", "a1 2b 3e 4d"],
+    ["is2 Thi1s T4est 3a", "Thi1s is2 3a T4est"],
+    ["c1oding 2is 3fun", "c1oding 2is 3fun"],
+    ["hello1", "hello1"],
+    ["", ""]
 ]
 
 def test() -> tuple:
