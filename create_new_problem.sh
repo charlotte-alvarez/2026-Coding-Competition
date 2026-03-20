@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Get the latest problem number
-latest_problem=$(ls -d problems/problem_* 2>/dev/null | sed 's/.*problem_//' | sort -n | tail -1)
+latest_problem=$(ls -d problems/problem_* 2>/dev/null | sed 's/.*problem_//' | sort -n | tail -1 | sed 's/^0//')
 
 if [ -z "$latest_problem" ]; then
     echo "No problems found. Creating problem_01..."
